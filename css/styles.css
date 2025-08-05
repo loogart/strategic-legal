@@ -1,0 +1,165 @@
+:root{
+    --bg-beige: #F2E8E1;
+    --card-beige:#FFF3EB;
+    --burgundy: #BA202D;
+    --gold:#BB7C4D;
+    --gold-light:#FFA766;
+    --brown:#3A3535;
+    --dark: #282424;;
+  --section-padding-y: 4rem; /* Adjust this value to control all section vertical padding */
+
+}
+
+body{
+  font-family: "geist", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:var(--dark-brown);
+  background-color: var(--bg-beige);
+  line-height: 1.4;
+  font-size: 1em;
+}
+
+h1, h2{
+  line-height: 0.9!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.video-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-py {
+  padding-top: var(--section-padding-y) !important;
+  padding-bottom: var(--section-padding-y) !important;
+}
+
+.list-dividers li:not(:last-child) {
+  border-bottom: 1px solid var(--dark);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+/* Background color utilities */
+.bg-beige { background-color: var(--bg-beige) !important; }
+.bg-beige-card { background-color: var(--card-beige) !important; }
+.bg-burgundy { background-color: var(--burgundy) !important; }
+.bg-gold { background-color: var(--gold) !important; }
+.bg-gold-light { background-color: var(--gold-light) !important; }
+.bg-brown { background-color: var(--brown) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+
+/* Text color utilities */
+.text-beige { color: var(--bg-beige) !important; }
+.text-beige-card { color: var(--card-beige) !important; }
+.text-burgundy { color: var(--burgundy) !important; }
+.text-gold { color: var(--gold) !important; }
+.text-gold-light { color: var(--gold-light) !important; }
+.text-brown { color: var(--brown) !important; }
+.text-dark { color: var(--dark) !important; }
+
+.logo-nav{
+  width:220px;
+}
+
+
+.btn-custom {
+  background-color: var(--card-beige);
+  color: var(--burgundy);
+  border: 1px solid var(--burgundy);
+  border-radius: 60px;
+  padding: 0.5rem 1.25rem;
+  font-family: "geist", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: var(--bg-beige);
+  border: 1px solid var(--burgundy);
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+.btn-custom:active {
+  background-color: var(--gold-light);
+  color: var(--dark);
+}
+
+.btn-custom:disabled,
+.btn-custom.disabled {
+  background-color: var(--card-beige);
+  color: var(--brown);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--burgundy) !important;
+}
+
+
+/* Set base nav-link color to dark */
+.navbar-nav .nav-link {
+  color: var(--dark) !important;
+}
+
+/* Set active nav-link color to burgundy */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active {
+  color: var(--burgundy) !important;
+}
+
+/* On hover/focus, also burgundy */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--burgundy) !important;
+
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0.75rem;
+}
+
+.narrow-width{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.icon-service{
+  width:69px;
+  height:69px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .logo-nav{
+    width:200px;
+  }
+  .video-hero {
+    width: 100%;
+    height: 200px!important; /* Adjust height for smaller screens */
+    object-fit: cover;
+  }
+    .section-py {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
