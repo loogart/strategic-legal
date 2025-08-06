@@ -73,7 +73,7 @@
                     <div class="col-md-6 col-lg-5 order-2 order-md-1">
                         <h1>Contact</h1>
                         <!-- Contact Form Start -->
-                        <form class="mt-4"  action="https://formspree.io/f/xqalyvvd" method="post">
+                        <form class="mt-4" id="contact-form" action="https://formspree.io/f/xqalyvvd" method="post">
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Nom complet</label>
                             <input type="text" class="form-control" id="fullName" name="fullName" required>
@@ -113,6 +113,38 @@
                         </div>
                         <button type="submit" class="btn btn-custom w-100">Soumettre la demande</button>
                         </form>
+                        <div id="form-success" style="display: none;">
+                            <!-- confirmation -->
+                            
+                            <h1 class="display-4 mb-4"><i class="fas fa-check-circle text-custom text-burgundy"></i>Merci.</h1>
+                            <p class="lead">Votre message a été reçu. Nous vous contacterons sous peu.</p>
+                            <a href="./" class="btn btn-custom">Retour à l'accueil</a>
+                        </div>
+                        <script>
+                            /* ajax redirect */
+                            const form = document.getElementById("contact-form");
+                            const success = document.getElementById("form-success");
+
+                            form.addEventListener("submit", async (e) => {
+                                e.preventDefault();
+
+                                const data = new FormData(form);
+                                const response = await fetch(form.action, {
+                                method: form.method,
+                                body: data,
+                                headers: {
+                                    Accept: "application/json"
+                                }
+                                });
+
+                                if (response.ok) {
+                                form.style.display = "none";
+                                success.style.display = "block";
+                                } else {
+                                alert("There was an error. Please try again later.");
+                                }
+                            });
+                        </script>
                         <!-- Contact Form End -->
                     </div>
                     <div class="col-md-6 col-lg-5 order-1 order-md-2">
