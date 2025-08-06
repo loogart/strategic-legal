@@ -50,29 +50,36 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-beige">
-            <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-beige">
+        <div class="container">
+            <a class="navbar-brand" href="./"><img src="./img/logo nav.svg" alt="" class="logo-nav"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-dark" style="font-size: 1.5rem;"></i>
+            </button>
+            <div class="offcanvas offcanvas-end align" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-beige">
                 <a class="navbar-brand" href="./"><img src="./img/logo nav.svg" alt="" class="logo-nav"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars text-dark" style="font-size: 1.5rem;"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Transactions</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex ms-lg-3" role="search">
-                        <a class="btn btn-custom" href="#!">Free discovery call</a>
-                    </form>
-                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                ></button>
             </div>
+            <div class="offcanvas-body bg-beige">
+                <ul class="navbar-nav align-items-lg-center ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Transactions</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-4 mt-lg-0" role="search">
+                <a class="btn btn-custom" href="#!">Free discovery call</a>
+                </form>
+            </div>
+            </div>
+        </div>
         </nav>
     </header>
 
@@ -137,8 +144,8 @@
                         <li class="d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000"><i class="fa-light fa-xl fa-circle-exclamation me-3 text-burgundy"></i>Raising capital? Want to ensure continued involvement and benefit from growth?</li>
                         <li class="d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000"><i class="fa-light fa-xl fa-circle-exclamation me-3 text-burgundy"></i>Outgrown basic legal advice? Need a lawyer with complex contract and transaction expertise?</li>
                     </ul>
-                    <p class="my-3">Without proper legal support, deals fail, intellectual property isn’t protected, and you’re exposed to legal pitfalls or compliance breaches.</p>
-                    <a class="btn btn-custom" href="#!">Free discovery call</a>
+                    <p class="my-3" data-aos="fade-up" data-aos-duration="1000">Without proper legal support, deals fail, intellectual property isn’t protected, and you’re exposed to legal pitfalls or compliance breaches.</p>
+                    <a class="btn btn-custom" href="#!" data-aos="fade-up" data-aos-duration="1000">Free discovery call</a>
                 </div>
             </div>
         </div>
@@ -203,11 +210,212 @@
                         </div>
                     </div>
                 </div>
+                <div class="my-5 text-center">
+                    <a class="btn btn-gold" href="#!" data-aos="fade-up" data-aos-duration="1000">Free discovery call</a>
+                </div>
+                
             </div>
         </section>
+
+        <!-- Authority -->
+        <section class="section-py bg-beige bg-trophies">
+            <div class="container container-narrow">
+                <img src="./img/laila-sahyoun.jpg" alt="" class="profile-pic mb-4">
+                <h2 class="display-4 mb-4">Real deals. Real results.</h2>
+                <p>Laila Sahyoun founded Strategic Legal to offer business owners high-quality legal advice without the formality or overhead of a traditional big firm. With a focus on practical, founder-first support, she brings experience, creativity and responsiveness.</p>
+                <div class="row g-3 align-items-stretch">
+                    <div class="col-md-4">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <i class="fa fa-shield-check text-burgundy fa-xl mb-4"></i>
+                            <h3 class="display-2 lh-1 mb-0">1000s</h3>
+                            <small>of transactions closed</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <i class="fa fa-star text-burgundy fa-xl mb-4"></i>
+                            <h3 class="display-2 lh-1 mb-0">25+</h3>
+                            <small>years of legal transactional experience</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <i class="fa fa-leaf-maple text-burgundy fa-xl mb-4"></i>
+                            <h3 class="display-2 lh-1 mb-0">100s</h3>
+                            <small>of Canadian entrepreneurs and foreign investors have trusted our services</small>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        
+        <!-- transactions -->
+        <section class="pb-5 bg-beige">
+            <div class="container container-narrow">
+                <div class="py-5">
+                    <span class="text-burgundy fw-bold">Transactions Closed</span>
+                    <ul class="list-unstyled list-dividers-tall my-5">
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>
+                                Series A Investment in Software Development Company
+                            </h3>
+                            U.S. VC Series A financing in a Quebec software development company. Mid Market Transaction. Acted as lead counsel for the target company working closely with another business lawyer.
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>
+                                Sale to Strategic Buyer in Environmental Sector
+                            </h3>
+                            Canadian acquirer backed by foreign funds strategic acquisition of a Quebec based company in the environmental sector. Mid Market Transaction. Acted as lead counsel for the seller and its subsidiaries.
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>
+                                Sale of a Software Development Company to a Multinational
+                            </h3>
+                            Sale of a software development company to a French multinational company. Mid Market Transaction. Acted as lead counsel for the seller. Continued advising on corporate, commercial, intellectual property legal matters post-closing. 
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>
+                                Acquistion of a Competitor in Manufacturing Industry
+                            </h3>
+                            Acquisition of a company of the same size in the field of plastic products.  Mid Market Transaction. Acted as lead counsel for the purchaser. Continued advising purchaser on corporate, commercial, intellectual property legal matters post-closing. 
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>
+                                Cross Border M&A Transaction in the Biotechnology Sector
+                            </h3>
+                            Canadian biotechnology  company with a US subsidiary with Canadian and US shareholders share sale to a US company in a complimentary field.  Mid Market Transaction. Acted as lead counsel for the selling shareholders, in coordination with international law firms in Canada and the US.
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1000">
+                            <h3>Family Transfers / Estate Freezes</h3>
+                            Acted as legal counsel on various transactions working in conjunction with tax advisors to implement complex estate plans for family transfers, including by way of estate freezes or share sale transactions. 
+                        </li>
+                        
+                    </ul>
+                    <a href="#!">View all transactions</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Packages -->
+        <section class="py-5 bg-beige">
+            <div class="container container-narrow">
+                <div class="bg-beige-card overflow-hidden rounded-5">
+                    <img src="./img/image-about.jpg" alt="" class="img-fluid w-100 object-fit-cover">
+                    <div class="p-4 p-md-5">
+                        <h2 class="display-5 mb-4">Legal support that<br>adapts to your deal.</h2>
+                        <p>Every entrepreneur, business and transaction is unique and so is the legal work behind it. At Strategic Legal, we customize our advice to your specific needs and a deal’s complexity and timeline. Here’s how companies typically work with us:</p>
+                        <ul class="list-unstyled list-dividers-xl-tall mt-5">
+                            <li class="d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./img/icon-transaction-ready.svg" alt="" style="width: 40px; height: 40px;" class="me-4">
+                                <div class="d-flex flex-column">
+                                    <h3>Transaction-Ready</h3>
+                                    For companies preparing for a financing round, acquisition, sale or other major transaction, we draft and negotiate the legal agreements, assist with due diligence and coordinate with parties and their advisors to ensure a smooth and successful closing.
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./img/icon-transaction-ready.svg" alt="" style="width: 40px; height: 40px;" class="me-4">
+                                <div class="d-flex flex-column">
+                                    <h3>Growth-Stage Partner</h3>
+                                    We provide legal support to companies at different stages, including drafting commercial and licensing agreements, shareholders agreements, employment and consulting agreements, privacy policies and terms and conditions and commercial leases.
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./img/icon-transaction-ready.svg" alt="" style="width: 40px; height: 40px;" class="me-4">
+                                <div class="d-flex flex-column">
+                                    <h3>Targeted Support</h3>
+                                    We also work on specific mandates, such as estate planning, a new partnership, ensuring compliance with new legal requirements as well as mandates for clients that are referred from other lawyers who are in conflict of interest. 
+                                </div>
+                            </li>                           
+                        </ul>
+                        <div class="mt-5">
+                            <a class="btn btn-custom" href="#!" data-aos="fade-up" data-aos-duration="1000">Free discovery call</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- The Plan -->
+         <section class="py-5 bg-beige">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="display-4 mb-5">How it works</h2>
+                </div>
+                <div class="row align-items-stretch g-3">
+                    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <div class="text-special display-1">1</div>
+                            <div class="h3 text-special text-burgundy mb-4">Contact us</div>
+                            <p>We will schedule a FREE 30-minute consultation to determine if we can help.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <div class="text-special display-1">2</div>
+                            <div class="h3 text-special text-burgundy mb-4">Get a Roadmap</div>
+                            <p>We’ll outline your specific legal needs and next steps.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="bg-beige-card p-4 rounded-4 h-100">
+                            <div class="text-special display-1">3</div>
+                            <div class="h3 text-special text-burgundy mb-4">Move Forward with Confidence</div>
+                            <p>Once agreed, you can concentrate on growing your business while we handle the legal aspects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <a class="btn btn-custom" href="#!" data-aos="fade-up" data-aos-duration="1000">Free discovery call</a>
+                </div>
+            </div>
+         </section>
+
+         <!-- explainer -->
+          <section class="section-py bg-dark text-beige">
+            <div class="container">
+                <div class="bg-brown rounded-5 overflow-hidden">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="./img/image-cta.jpg" alt="" class="img-fluid w-100 object-fit-cover h-100 rounded-start-5">
+                        </div>
+                        <div class="col-lg-6 py-4 p-lg-5">
+                            <div>
+                            <h2 class="display-5 mb-4">Strategic legal services for modern business builders.</h2>
+                            <p>Laila Sahyoun founded Strategic Legal to bring high-quality, founder-focused legal advice to companies who don’t want a traditional big-firm experience. She’s creative, responsive, and fully aligned with your business goals — not buried in billable hours.</p>
+                            <a class="btn btn-gold" href="#!" data-aos="fade-up" data-aos-duration="1000">Free discovery call</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+
     </main>
 
-    <footer class="text-center mt-4">
+    <footer class="bg-dark text-beige py-5">
+        <div class="container"> 
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2 text-center text-lg-left">
+                    <a href="./"><img src="./img/logo-footer.svg" alt="" class="logo-footer mb-4"></a>
+                </div>
+                <div class="col-lg-8">
+                <ul class="list-unstyled d-flex flex-column flex-lg-row justify-content-center align-items-center flex-wrap">
+                    <li class="me-md-4 mb-4 mb-lg-0"><a href="#" class="footer-link">Team</a></li>
+                    <li class="me-md-4 mb-4 mb-lg-0"><a href="#" class="footer-link">Services</a></li>
+                    <li class="me-md-4 mb-4 mb-lg-0"><a href="#" class="footer-link">Transactions</a></li>
+                    <li class="me-md-4 mb-4 mb-lg-0"><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+                </div>
+                <div class="col-lg-2 text-center text-lg-left">
+                <a href="./" class="text-gold-light"><i class="fa fa-linkedin-square fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="py-5">
+            <p class="mini text-center">© <span id="year"></span> Strategic Legal. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

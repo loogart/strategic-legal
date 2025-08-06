@@ -20,14 +20,28 @@ body{
   font-size: 1em;
 }
 
+section{
+  overflow: hidden;
+}
+
+a{
+  color: var(--brown);
+  /* text-decoration: none; */
+}
+
 h1, h2{
   line-height: 0.9!important;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .text-special{
     font-family: 'Abhaya Libre', serif;
     font-weight: 400;
     line-height: 100%;
+}
+
+.container-narrow {
+  max-width: 800px;
+  margin: auto;
 }
 
 .video-hero {
@@ -45,6 +59,28 @@ h1, h2, h3, h4, h5, h6{
   border-bottom: 1px solid var(--dark);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+}
+
+.list-dividers-tall li:not(:last-child) {
+  border-bottom: 1px solid var(--dark);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.list-dividers-xl-tall li:not(:last-child) {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3rem;
+  padding-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -70,22 +106,26 @@ h1, h2, h3, h4, h5, h6{
   width:220px;
 }
 
+.logo-footer{
+  width:200px;
+}
+
 
 .btn-custom {
-  background-color: var(--card-beige);
+  /* background-color: var(--beige); */
   color: var(--burgundy);
   border: 1px solid var(--burgundy);
   border-radius: 60px;
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   font-family: "geist", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-custom:hover,
 .btn-custom:focus {
-  background-color: var(--bg-beige);
+  background-color: var(--card-beige);
   border: 1px solid var(--burgundy);
   color: var(--burgundy);
   text-decoration: none;
@@ -98,7 +138,40 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-custom:disabled,
 .btn-custom.disabled {
-  background-color: var(--card-beige);
+  background-color: transparent;
+  color: var(--brown);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.btn-gold {
+  background-color: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 60px;
+  padding: 0.75rem 1.25rem;
+  font-family: "geist", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  text-decoration: none;
+}
+
+.btn-gold:active {
+  background-color: transparent;
+  color: var(--dark);
+}
+
+.btn-gold:disabled,
+.btn-gold.disabled {
+  background-color: transparent;
   color: var(--brown);
   opacity: 0.7;
   pointer-events: none;
@@ -147,9 +220,36 @@ h1, h2, h3, h4, h5, h6{
   height:69px;
   object-fit: contain;
 }
+.bg-trophies {
+  background-image: url('../img/image-real-deal.png'), url('../img/image-real-deal.png');
+  background-position: left -150px top 50%, right -150px top 50%;
+  background-size: 300px, 300px; /* Adjust size as needed */
+  background-repeat: no-repeat, no-repeat;
+}
+
+.footer-link {
+  color: var(--beige);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.mini{
+  font-size: 12px;
+  color: rgb(129, 129, 117);
+}
+
+@media (max-width: 991px) {
+  .bg-trophies {
+    background-image: url('../img/image-real-deal.png');
+    background-position: right -120px top -120px;
+    background-size: 300px; /* Adjust size as needed */
+    background-repeat: no-repeat;
+  }
+}
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .logo-nav{
     width:200px;
   }
@@ -161,5 +261,16 @@ h1, h2, h3, h4, h5, h6{
     .section-py {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+  .icon-service{
+    width:50px;
+    height:50px;
+    object-fit: contain;
+  }
+  .bg-trophies {
+    background-image: url('../img/image-real-deal.png');
+    background-position: right -100px top -100px;
+    background-size: 200px; /* Adjust size as needed */
+    background-repeat: no-repeat;
   }
 }
