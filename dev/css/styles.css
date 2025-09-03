@@ -6,7 +6,7 @@
     --gold-light:#FFA766;
     --brown:#3A3535;
     --dark: #282424;;
-  --section-padding-y: 4rem; /* Adjust this value to control all section vertical padding */
+  --section-padding-y: 6rem; /* Adjust this value to control all section vertical padding */
 
 }
 
@@ -289,6 +289,12 @@ h1, h2, h3, h4, h5, h6, .text-special{
 
 }
 
+@media(max-width:991px){
+  .team-member {
+ flex-direction: column;
+
+}
+
 
 @media (max-width: 767px) {
   .logo-nav{
@@ -317,7 +323,6 @@ h1, h2, h3, h4, h5, h6, .text-special{
   .image-hero-banner{
   height:320px;
 }
-.team-member {
- flex-direction: column;
 
+}
 }
