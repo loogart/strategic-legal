@@ -39,6 +39,14 @@ h1, h2, h3, h4, h5, h6, .text-special{
     line-height: 100%;
 }
 
+.eyebrow{
+  font-family: "geist", sans-serif;
+  font-weight: 500;
+  color: var(--gold);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
 .container-narrow {
   max-width: 800px;
   margin: auto;
